@@ -9,7 +9,7 @@ const client = new Client({
 });
 
 // บอทออนไลน์
-client.once('clientReady', () => {
+client.once('ready', () => {
   console.log('NuLong online!');
 });
 
@@ -310,4 +310,4 @@ Or recklessly. I truly do not mind.`);
 });
 
 // ใส่ TOKEN ตรงนี้
-client.login('MTUwNDY0ODM5MTM0OTUwNjExMA.GX94oP.F0AS5eA_nioM2-pdMumiBdk7ltC4CT_yuc_Rh0');
+client.login(process.env.TOKEN);
